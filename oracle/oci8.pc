@@ -1,0 +1,10 @@
+prefix=/usr
+instantclient=/usr/instantclient_12_1
+libdir=${instantclient}
+includedir=${instantclient}/sdk/include/
+
+Name: oci8
+Description: oci8 library
+Version: 12.1
+Libs: -L${libdir} -lclntsh
+Cflags: -I${includedir}
